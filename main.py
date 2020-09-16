@@ -1,26 +1,10 @@
-#My name is Mohammad Irfan and my people soft is 1626488
-lemon_juice=float(input('Enter amount of lemon juice (in cups):'))
-water=float(input('Enter amount of water (in cups):'))
-agave_nectar=float(input('Enter amount of agave nectar (in cups):'))
-serving=float(input('How many servings does this make?'))
-print("")
-print('Lemonade ingredients - yields '+str('{:.2f}'.format(serving))+' servings')
-print(str('{:.2f}'.format(lemon_juice))+' cup(s) lemon juice')
-print(str('{:.2f}'.format(water))+' cup(s) water')
-print(str('{:.2f}'.format(agave_nectar))+' cup(s) agave nectar')
-print("")
-new_serving=float(input('How many servings would you to make?'))
-x=new_serving/serving
-new_lemon_juice=lemon_juice*x
-new_water=water*x
-new_agave_nectar=agave_nectar*x
-print("")
-print('Lemonade ingredients - yields '+str('{:.2f}'.format(new_serving))+' servings')
-print(str('{:.2f}'.format(new_lemon_juice))+' cup(s) lemon juice')
-print(str('{:.2f}'.format(new_water))+' cup(s) water')
-print(str('{:.2f}'.format(new_agave_nectar))+' cup(s) agave nectar')
-print("")
-print('Lemonade ingredients - yields '+str('{:.2f}'.format(new_serving))+' servings')
-print(str('{:.2f}'.format(new_lemon_juice/16))+' cup(s) lemon juice')
-print(str('{:.2f}'.format(new_water/16))+' cup(s) water')
-print(str('{:.2f}'.format(new_agave_nectar/16))+' cup(s) agave nectar')
+# My name is Mohammad Irfan and my peoplesoft is 1626488
+user_num=int(input("Enter integer: "))
+squared=user_num*user_num
+cubed=squared*user_num
+print("You entered: ",user_num)
+print(user_num," squared is ",squared)
+print("And ",user_num," cubed is ",cubed," !!")
+user_num2=int(input("Enter another integer: "))
+print(user_num," + ",user_num2," is ",user_num+user_num2)
+print(user_num," * ",user_num2," is ",user_num*user_num2)
