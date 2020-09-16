@@ -1,14 +1,26 @@
-# My name is Mohammad Irfan and my peoplesoft is 1626488
-import math
-height = int(input("Enter wall height (feet):\n"))
-width = int(input("Enter wall width (feet):\n"))
-wall_area = height * width
-paint_needed = wall_area / 350
-cans = math.ceil(paint_needed)
-paint_colors_cost={'red':35,'blue':25,'green':23}
-print("Wall area: " + str(wall_area) + " square feet")
-print("Paint needed: {:.2f} gallons".format(paint_needed))
-print("Cans needed: " + str(cans) + " can(s)")
-color=input("\nChoose a color to paint the wall:\n")
-cost=cans * paint_colors_cost[color.lower()]
-print ("Cost of purchasing " + str(color) + " paint: $" + str(cost))
+#My name is Mohammad Irfan and my people soft is 1626488
+lemon_juice=float(input('Enter amount of lemon juice (in cups):'))
+water=float(input('Enter amount of water (in cups):'))
+agave_nectar=float(input('Enter amount of agave nectar (in cups):'))
+serving=float(input('How many servings does this make?'))
+print("")
+print('Lemonade ingredients - yields '+str('{:.2f}'.format(serving))+' servings')
+print(str('{:.2f}'.format(lemon_juice))+' cup(s) lemon juice')
+print(str('{:.2f}'.format(water))+' cup(s) water')
+print(str('{:.2f}'.format(agave_nectar))+' cup(s) agave nectar')
+print("")
+new_serving=float(input('How many servings would you to make?'))
+x=new_serving/serving
+new_lemon_juice=lemon_juice*x
+new_water=water*x
+new_agave_nectar=agave_nectar*x
+print("")
+print('Lemonade ingredients - yields '+str('{:.2f}'.format(new_serving))+' servings')
+print(str('{:.2f}'.format(new_lemon_juice))+' cup(s) lemon juice')
+print(str('{:.2f}'.format(new_water))+' cup(s) water')
+print(str('{:.2f}'.format(new_agave_nectar))+' cup(s) agave nectar')
+print("")
+print('Lemonade ingredients - yields '+str('{:.2f}'.format(new_serving))+' servings')
+print(str('{:.2f}'.format(new_lemon_juice/16))+' cup(s) lemon juice')
+print(str('{:.2f}'.format(new_water/16))+' cup(s) water')
+print(str('{:.2f}'.format(new_agave_nectar/16))+' cup(s) agave nectar')
