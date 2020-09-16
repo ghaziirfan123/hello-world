@@ -1,24 +1,14 @@
-# my name is mohammad irfan and my peoplesoft is 1626488
-service_schedule = {"-": 0, "Oil change": 35, "Tire rotation": 19, "Car wash": 7, "Car wax": 12}
-print("Davy's auto shop services")
-print("Oil change -- $35")
-print("Tire rotation -- $19")
-print("Car wash -- $7")
-print("Car wax -- $12")
-print("")
-first_service = input("Select first service:")
-print("")
-second_service = input("Select second service:")
-print("")
-print("Davy's auto shop invoice")
-print("")
-if (first_service == "-"):
-    print("Service 1: No service")
-else:
-    print("Service 1: {:s}, ${:d}".format (first_service, service_schedule.get(first_service)))
-if (second_service == "-"):
-    print("Service 2: No service")
-else:
-    print("Service 2: {:s}, ${:d}".format (second_service, service_schedule.get(second_service)))
-invoice_total = service_schedule.get(first_service) + service_schedule.get(second_service)
-print("Total: ${:d}".format(invoice_total))
+# My name is Mohammad Irfan and my peoplesoft is 1626488
+import math
+height = int(input("Enter wall height (feet):\n"))
+width = int(input("Enter wall width (feet):\n"))
+wall_area = height * width
+paint_needed = wall_area / 350
+cans = math.ceil(paint_needed)
+paint_colors_cost={'red':35,'blue':25,'green':23}
+print("Wall area: " + str(wall_area) + " square feet")
+print("Paint needed: {:.2f} gallons".format(paint_needed))
+print("Cans needed: " + str(cans) + " can(s)")
+color=input("\nChoose a color to paint the wall:\n")
+cost=cans * paint_colors_cost[color.lower()]
+print ("Cost of purchasing " + str(color) + " paint: $" + str(cost))
